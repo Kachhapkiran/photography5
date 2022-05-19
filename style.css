@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: montserrat;
+}
+nav {
+  background: #0082e6;
+
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background-color: blue;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+
+
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+.header {
+  padding-top: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 451px;
+  color: rgb(255, 255, 255);
+  text-decoration:overline;
+  text-decoration-color: black ;
+  background-image: url("https://i.picsum.photos/id/178/1350/450.jpg?hmac=xXglSXd3VbnBBea3O5ubveDM7CUmvMgWMN3-lwLq5mg");
+}
+.btn {
+  border-radius: 44px;
+  border-style: none;
+  border: 2px solid rgba(139, 106, 106, 0.362);
+  margin: 15px;
+  width: 125px;
+  height: 35px;
+}
+.btn:hover {
+  background-color: #0082e6;
+  color: white;
+  font-weight: 600;
+}
+.work {
+  display: flex;
+  justify-content: center;
+
+  background-color: black;
+  color: white;
+}
+/* .card {
+  display: flex;
+  
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 25px;
+  border-radius: 15px;
+} */
+.card-img {
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+
+  
+}
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #0082e6;
+  font-weight: 900;
+  width: 760px;
+  color: white;
+}
+.container {
+   
+  display: flex;
+  background-color: antiquewhite;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.contactus {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 255px;
+  width: 1454px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+.card{
+  /* padding-top: 65px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 764px;
+  /* align-items: center; */
+}
+
+
+
